@@ -13,19 +13,28 @@ function App() {
     title:"Blog 1",
     descriptison:"lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor "
   }
+  // let style={
+  //   margin:'16px',
+  //   padding:'16px',
+  //   boxSizing:'border-box',
+  //   borderRadius:'5px',
+  //   boxShadow:'0 2px  5px #ccc'
+  // };
   return (
     <div className="App">
+      <div /*style={style}*/ class="style">
       <h1>{getFullName(firstName,lastName)}</h1>
       <p>{age}</p>
       <p>{job}</p>
       <input placeholder={placeholder} autoComplete></input>
-      <div>
+      </div>
+      <div class="style">
         <h2>{blog.title}</h2>
         <p>{blog.descriptison}</p>
       
       </div>
       <hr></hr>
-      <div>
+      <div class="style">
         <h2>{blog.title}</h2>
         <p>{blog.descriptison}</p>
       

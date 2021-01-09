@@ -23,7 +23,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.style{
+  margin:16px;
+  padding:16px;
+  box-sizing:border-box;
+  border-radius:5px;
+  box-shadow:0 2px  5px #ccc;
+}
+.App{
+  text-align: center;
+}
 .App-link {
   color: #61dafb;
 }
