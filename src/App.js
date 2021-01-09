@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Blog from './Blog';
 
 function App() {
   let firstName="Ananda";
@@ -20,25 +21,26 @@ function App() {
   //   borderRadius:'5px',
   //   boxShadow:'0 2px  5px #ccc'
   // };
-  let blogArr=[
+    let blogArr=[
+      {
+      id:1,
+      title:"Blog 1",
+      descriptison:"lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor "
+    },
     {
-    id:1,
-    title:"Blog 1",
-    descriptison:"lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor "
-  },
-  {
-    id:2,
-    title:"Blog 2",
-    descriptison:"lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor "
-  }
-];
+     id:2,
+      title:"Blog 2",
+      descriptison:"lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor "
+    }
+  ];
 let blogMaps=blogArr.map((item,pos)=>{
   return(
-    <div class="style" key={item.id}>
-        <h2>{item.title}</h2>
-        <p>{item.descriptison}</p>
+    <Blog key={pos} id={item.id} title={item.title} descriptison={item.descriptison}/>
+    // <div class="style" key={item.id}>
+    //     <h2>{item.title}</h2>
+    //     <p>{item.descriptison}</p>
       
-      </div>
+    //   </div>
   );
 });
   return (
