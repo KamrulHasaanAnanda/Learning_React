@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Blog from './Blog';
+import { arrCheck } from "./another";
 
 function App() {
   let firstName="Ananda";
@@ -33,7 +34,7 @@ function App() {
       descriptison:"lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor lorm Ipsum dolor "
     }
   ];
-let blogMaps=blogArr.map((item,pos)=>{
+let blogMaps=arrCheck(blogArr) ?[]: blogArr.map((item,pos)=>{
   return(
     <Blog key={pos} id={item.id} title={item.title} descriptison={item.descriptison}/>
     // <div class="style" key={item.id}>
